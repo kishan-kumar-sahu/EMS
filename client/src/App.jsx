@@ -2,8 +2,7 @@ import { useContext } from "react"
 import AppContext from "./Context/AppContext"
 import {BrowserRouter, Routes, Route } from "react-router-dom"
 
-// import Navbar from "./Employee_Side/Navbar"
-// import Login from "./Employee_Side/Login"
+
 import Navbar from "./Employee_side/Navbar"
  import Login from "./Employee_side/Login"
 
