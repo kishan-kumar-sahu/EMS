@@ -32,6 +32,7 @@ import AddEmployee from "./Admin _Side/AddEmployee"
 
 import AttendanceManagement from "./Admin _Side/AttendanceManagement"
 import LeaveRequests from "./Admin _Side/LeaveRequests"
+import Home from "./Home"
 
 const App = () => {
    
@@ -45,6 +46,7 @@ const App = () => {
      
            <ToastContainer/>
        <Routes>
+           <Route path="/" element={<Home></Home>}></Route>
         <Route path="/register"  element={<Register></Register>}></Route>
     <Route path="/login"  element={<Login></Login>}></Route>
     <Route path="/profile"  element={<Profile></Profile>}></Route>
@@ -68,7 +70,7 @@ const App = () => {
 
            {/*   for admin */}
 
-
+    
 <Route path="/admin/employeeList"  element={<EmployeeList></EmployeeList>}></Route>
 
   <Route path="/admin/dashboard"  element={<AdminDashboard></AdminDashboard>}></Route>
